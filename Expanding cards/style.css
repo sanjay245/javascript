@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.card {
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in-out;
+}
+
+.card h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.card.active{
+    flex: 5;
+}
+
+.card.active h3 {
+    opacity: 1;
+}
